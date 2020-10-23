@@ -2,21 +2,21 @@ import java.util.Scanner;
 
 public class ex02 {
   public static void main(String[] args) {
+    int num, soma, i;
+    float media;
+
+    soma=0;
+    media=0;
+
     Scanner scanner = new Scanner(System.in);
 
-    System.out.print("Primeiro número:");
-    int firstNumber =scanner.nextInt();
-    System.out.print("Segundo número:");
-    int secondNumber =scanner.nextInt();
-    System.out.print("Terceiro número:");
-    int thirdNumber =scanner.nextInt();
-    System.out.print("Quarto número:");
-    int fourthNumber =scanner.nextInt();
-    System.out.print("Quinto número:");
-    int fifthNumber =scanner.nextInt();
+    for (i=1; i<=5;i++) {
+      System.out.print("Introduza um numero: ");
+      num = scanner.nextInt();
+      soma=soma+num;
+    }
 
-    int res = (firstNumber + secondNumber + thirdNumber + fourthNumber + fifthNumber)/5;
-
-    System.out.println("O resultado é: " + res);
+    media=(float)soma/5;
+    System.out.println("O resultado é: " + media);
   }
 }
