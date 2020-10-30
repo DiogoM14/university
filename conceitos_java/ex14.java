@@ -12,6 +12,7 @@ public class ex14 {
     Scanner scanner = new Scanner(System.in);
 
     System.out.println("Selecione uma as opções abaixo:");
+    System.out.println("0 - Adicionar dados.");
     System.out.println("1 - Percentagem de condutores com menos de 30 anos.");
     System.out.println("2 - Percentagem de mulheres.");
     System.out.println("3 - Percentagem de condutores masculinos com álcool no sangue superior a 0.5g.");
@@ -23,6 +24,9 @@ public class ex14 {
     int year = (cal.get(Calendar.YEAR)-30);
 
     switch(opcao){
+      case 0:
+        
+        break;
       case 1:
         int arrayLengthNascimento = nascimento.length;
         nascimento = Arrays.stream(nascimento).filter(x -> x <= year).toArray();
