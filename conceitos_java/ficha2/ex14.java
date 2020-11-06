@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class ex14 {
   public static void main(String[] args) {
     int opcao;
-    int[] bilhetes = {2499212, 1913312, 2046383, 2046383, 2046383}, nascimento = {2000, 1999, 1999, 1999, 1990, 1990};
-    String[] genero = {"masculino", "feminino", "feminino"};
+    int[] bilhetes = {2499212, 1913312, 2046383, 2046383, 2046383}, nascimento = {2000, 1999, 1999, 1990, 1990};
+    String[] genero = {"masculino", "feminino", "feminino", "feminino", "masculino"};
     double[] alcool = {0.3, 0.6, 0.7, 0.3, 0.3};
 
     Scanner scanner = new Scanner(System.in);
@@ -25,8 +25,9 @@ public class ex14 {
 
     switch(opcao){
       case 0:
-        
+        //Recebe cada um dos dados
         break;
+
       case 1:
         int arrayLengthNascimento = nascimento.length;
         nascimento = Arrays.stream(nascimento).filter(x -> x <= year).toArray();
@@ -60,18 +61,5 @@ public class ex14 {
       default:
         System.out.println("Erro: Introduza um os números a cima!" );
     }
-
-
-    // System.out.println(genero[0]);
   }
 }
-
-/*
-número de bilhete de identidade, ano de nascimento, genero e quantidade de álcool no sangue
-
-a. Percentagem de condutores com menos de 30 anos.
-b. Percentagem de mulheres.
-c. Percentagem de condutores masculinos com álcool no sangue
-superior a 0.5g.
-d. A entrada de dados deve terminar quando for lido o valor 0 para o bilhete de identidade.
-*/
