@@ -91,3 +91,10 @@ public class App
         System.out.print(novaLista[0]);
     }
 }
+// Escreva um programa que permita:
+// a. Unir os dois vetores num novo vetor. Imprima o vetor resultante;
+// b. Apresente quantos elementos repetidos existem no vetor criado na alínea a;
+// c. Preencher um novo vetor com os elementos do vetor: “listaA” que não se encontram no vetor:
+// ”listaB”;
+// d. Preencher um novo vetor com os elementos que se encontram simultaneamente nos dois vetores
+// (sem repetidos).
