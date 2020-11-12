@@ -1,5 +1,8 @@
-package ficha3.src.main.java.exerc;
+package exerc;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class App 
@@ -14,7 +17,7 @@ public class App
         quest = scanner.nextInt();
 
         System.out.println("Executando exercício " + quest);
-        ex06();
+        ex05();
     }
 
     public static void ex01() {
@@ -82,13 +85,55 @@ public class App
         }
     }
 
+    public static void ex05() {
+        String nome;
+        String apelido;
+
+        char[] nomeCompleto = new char[1]; 
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Insira o seu primeiro nome -> ");
+        nome = scanner.nextLine();
+        nomeCompleto.push('n');
+        
+        System.out.print("Insira o seu apelido -> ");
+        apelido = scanner.nextLine();
+
+        System.out.println(apelido + nome);
+        
+    }
+
+    // Escreva um programa que através da sua invocação a partir da linha de comandos, receba dois parâmetros
+    // correspondentes ao primeiro e último nome de uma pessoa e apresente no ecrã esse nome no seguinte
+    // formato: apelido, nome.
+
     public static void ex06() {
         int[] listaA = {2, -5, -121, 102, -35, -2, 0, -125, 802, -10};
-        int[] listaB = {6, 99, -1, 12, 1, -2};
+        int[] listaB = {6, 99, -1, 12, 1, -2, -35};
+
+        int i = 0;
 
         int[] novaLista = new int[listaA.length + listaB.length];
 
-        System.out.print(novaLista[0]);
+        System.arraycopy(listaA, 0, novaLista, 0, listaA.length);
+        System.arraycopy(listaB, 0, novaLista, listaA.length, listaB.length);
+
+        Arrays.sort(novaLista);   
+
+        System.out.print("\n[ ");
+        for (i = 0; i<novaLista.length; i++) {
+            int arrayNumber = novaLista[i];
+            System.out.print( arrayNumber);
+            System.out.print(", ");
+        }
+        System.out.print(" ] \n");
+
+        for(int j = 1; j<novaLista.length; j++) {
+            if(novaLista[j] == novaLista[j-1]) {
+                System.out.println("O numero " + novaLista[j] + " está repetido");
+            }
+        }
     }
 }
 // Escreva um programa que permita:
