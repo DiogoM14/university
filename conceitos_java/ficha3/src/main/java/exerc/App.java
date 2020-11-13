@@ -86,22 +86,21 @@ public class App
     }
 
     public static void ex05() {
-        String nome;
-        String apelido;
-
-        char[] nomeCompleto = new char[1]; 
+        String[] nomeCompleto = new String[2]; 
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Insira o seu primeiro nome -> ");
-        nome = scanner.nextLine();
-        nomeCompleto.push('n');
+        nomeCompleto[0] = scanner.nextLine();
+        String[] splited = nomeCompleto[0].split(" ");
+        nomeCompleto[0] = splited[0];
         
         System.out.print("Insira o seu apelido -> ");
-        apelido = scanner.nextLine();
+        nomeCompleto[1] = scanner.nextLine();
+        String[] splited2 = nomeCompleto[1].split(" ");
+        nomeCompleto[1] = splited2[0];
 
-        System.out.println(apelido + nome);
-        
+        System.out.println(nomeCompleto[1] + " " + nomeCompleto[0]);
     }
 
     // Escreva um programa que através da sua invocação a partir da linha de comandos, receba dois parâmetros
