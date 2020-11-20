@@ -8,10 +8,45 @@ public class App
     
     public static void main( String[] args )
     {
+        // int opcao=0;
+        // Scanner scanner = new Scanner(System.in); 
+
+        // do {
+        //     System.out.println("1 - Inicializa Array");
+        //     System.out.println("2 - Lê Array");
+        //     System.out.println("3 - Imprime Array");
+        //     System.out.println("4 - Procura Array");
+        //     System.out.println("5 - Ordena Array");
+        //     System.out.println("0 - Terminar");
+        //     System.out.print("\n Introduza a sua opção -> ");
+        //     opcao=scanner.nextInt();
+
+        // } while(opcao!=0);
+
+        // switch(opcao) {
+        //     case 1:
+        //         inicializa();
+        //         break;
+        //     case 2:
+        //         leitura();
+        //         break;
+        //     case 3:
+        //         imprime();
+        //         break;
+        //     case 4:
+        //         procura();
+        //         break;
+        //     case 5:
+        //         ordenar();
+        //         break;
+        // }
+
         inicializa();
+        leitura();
         imprime();
         procura();
         ordenar();
+        repetido();
     }
     
     public static void inicializa() {   // Inicializa todos os elementos do array até 1
@@ -61,6 +96,27 @@ public class App
                     numeros[i]=numeros[j];
                     numeros[j]=aux;
                 }
+            }
+        }
+    }
+
+    public static void leitura() {
+        Scanner scanner = new Scanner(System.in);
+        
+        int i;
+
+        for(i=0; i<numeros.length;i++) {
+            System.out.print("Introduza um número para a posição " + i + " ->");
+            numeros[i]=scanner.nextInt();
+        }
+    }
+
+    public static void repetido() {
+        int i;
+
+         for(i = 1; i<numeros.length; i++) {
+            if(numeros[i] == numeros[i-1]) {
+                System.out.println("O numero " + numeros[i] + " está repetido");
             }
         }
     }
