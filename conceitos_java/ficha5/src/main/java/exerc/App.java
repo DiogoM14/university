@@ -65,6 +65,18 @@ public class App
                 ex01c();
                 ex01();
                 break;
+            case 5:
+                ex01e();
+                ex01();
+                break;
+            case 6:
+                ex01f();
+                ex01();
+                break;
+            case 7:
+                ex01g();
+                ex01();
+                break;
             default:
                 break;
         }
@@ -113,6 +125,38 @@ public class App
         System.out.println("]");
         pausa();
     }
+ 
+    public static void ex01e()
+    {
+        int i, soma;
+        soma= 0;
+        for(i=0;i<array1.length;i++) {
+            soma=soma+array1[i];
+        }
+        System.out.print("A soma do array é " + soma);
+    }
+     
+    public static void ex01f()
+    {
+        int i, maior;
+        
+        maior=array1[0];
+        for(i=1;i<array1.length;i++) {
+            if(array1[i]>maior)
+                maior=array1[i];
+        }
+    }
+
+    public static void ex01g()
+    {
+        int i, menor;
+        
+        menor=array1[0];
+        for(i=1;i<array1.length;i++) {
+            if(array1[i]<menor)
+                menor=array1[i];
+        }
+    }
 
     public static void pausa()
     {
@@ -129,14 +173,4 @@ public class App
     }
 }
 
-
-
-// Elabore um programa, com recurso a procedimentos/funções, que permita ao utilizador escolher
-// uma das seguintes opções:
-// a. Carregar um array com 10 valores inteiros
-// b. Pesquisar um valor, e indicar ao utilizador se o valor existe dentro do array
-// c. Ordenar o array por ordem crescente e mostrar o resultado ao utilizador
 // d. Ordenar o array por ordem decrescente e mostrar o resultado ao utilizador
-// e. Somar todas as posições do array e mostrar o resultado
-// f. Encontrar o maior valor e mostrar o resultado ao utilizador
-// g. Encontrar o menor valor e mostrar o resultado ao utilizador
