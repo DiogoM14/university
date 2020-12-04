@@ -1,0 +1,26 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  flex: 1;
+}
+
+.col-md-9 {
+  background-color: #000;
+}
+
+.col-md-9 h1, h3 {
+  color: #fff;
+  margin: 15px;
+}
+
+.col-md-9 img {
+  width: 100%;
+
+  border-radius: 8px;
+}
+
+.col-md-3 {
+  background-color: aqua;
+}

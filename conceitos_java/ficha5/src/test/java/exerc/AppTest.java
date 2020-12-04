@@ -1,4 +1,4 @@
-package src.test.java.exerc;
+package exerc;
 
 import static org.junit.Assert.assertTrue;
 

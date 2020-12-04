@@ -1,4 +1,4 @@
-package ficha4.src.main.java.exerc;
+package exerc;
 
 import java.util.Scanner;
 
@@ -6,7 +6,38 @@ public class App
 {
     public static void main( String[] args )
     {
-        ex01();
+        // int opcao=0;
+        // Scanner scanner = new Scanner(System.in); 
+
+        // do {
+        //     System.out.println("1 - Inicializa Array");
+        //     System.out.println("2 - Lê Array");
+        //     System.out.println("3 - Imprime Array");
+        //     System.out.println("4 - Procura Array");
+        //     System.out.println("5 - Ordena Array");
+        //     System.out.println("0 - Terminar");
+        //     System.out.print("\n Introduza a sua opção -> ");
+        //     opcao=scanner.nextInt();
+
+        // } while(opcao!=0);
+
+        // switch(opcao) {
+        //     case 1:
+        //         inicializa();
+        //         break;
+        //     case 2:
+        //         leitura();
+        //         break;
+        //     case 3:
+        //         imprime();
+        //         break;
+        //     case 4:
+        //         procura();
+        //         break;
+        //     case 5:
+        //         ordenar();
+        //         break;
+        // }
     }
 
     public static void ex01() {
