@@ -172,5 +172,3 @@ public class App
         }
     }
 }
-
-// d. Ordenar o array por ordem decrescente e mostrar o resultado ao utilizador
