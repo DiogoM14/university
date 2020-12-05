@@ -1,26 +1,36 @@
-.content {
-  display: flex;
-  flex-direction: row;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --webkit-font-smoothing: antialiased;
+  background: rgb(18, 18, 20);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(225, 225, 230);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@media screen and (max-width: 765px) {
+
+} 
+
+.row {
   height: 100vh;
-
-  flex: 1;
 }
 
-.col-md-9 {
-  background-color: #000;
+.col-md-10 {
+  background-color: #fff;
+  padding: 0;
+
+  text-align: center;
 }
 
-.col-md-9 h1, h3 {
-  color: #fff;
-  margin: 15px;
-}
-
-.col-md-9 img {
-  width: 100%;
-
-  border-radius: 8px;
-}
-
-.col-md-3 {
+.col-md-2 {
   background-color: aqua;
+  padding: 0;
 }

@@ -18,21 +18,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
 }
 
-@media screen and (max-width: 765px) {
+@media (max-width: 765px) {
   .title {
     text-align: center;
   }
 
   .login {
-    padding: 30px 15px;
-    
-    border-radius: 0px;
+    padding: 30px 15px !important;
+    border-radius: 4px !important;
   }
-} 
+}
 
-@media screen and (max-width: 1400px) {
-  .container img .bg-img {
-    width: 0px;
+@media (max-width: 1400px) {
+  .container .bg-img {
+    width: 0px !important;
   }
 }
 
