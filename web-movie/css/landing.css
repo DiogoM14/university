@@ -10,7 +10,7 @@ body {
   background: rgb(18, 18, 20);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, span {
   color: rgb(225, 225, 230);
   font-family: 'Ubuntu', sans-serif;
 }
@@ -29,6 +29,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 1080px) {
+  .flex-container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+}
+
 .row {
   height: 100vh;
   padding: 0;
@@ -37,6 +48,38 @@ h1, h2, h3, h4, h5, h6 {
 .col-md-12 {
   padding: 0;
   text-align: center;
+}
+
+.bg-dark {
+  background: rgb(18, 18, 20) !important;
+}
+
+.bg-dark .container-fluid a {
+  color: rgb(225, 225, 230);
+  font-weight: bold;
+}
+
+.bg-dark .container-fluid span {
+  font-weight: bold;
+  color: #e5434e;
+}
+
+.bg-dark .container-fluid input {
+  background: rgb(32, 32, 36);
+  border-style: none;
+  margin-right: 2%;
+  color: rgb(225, 225, 230);
+}
+
+.bg-dark .container-fluid button {
+  background: rgb(32, 32, 36);
+  color: rgb(225, 225, 230);
+  border: none;
+}
+
+.bg-dark .container-fluid button:focus {
+  background: rgb(18, 18, 20);
+  border: none;
 }
 
 .title {
@@ -63,7 +106,30 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(225, 225, 230);
 }
 
-hr {
-  color: #e5434e;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
+  margin: 0 10%;
+}
+
+.card {
+  background: rgb(32, 32, 36);
+}
+
+.card h5, p {
+  color: rgb(225, 225, 230);
+}
+
+.card .btn-primary {
+  width: 100%;
+  background: #e5434e;
+  border: none;
+  font-weight: 700;
+}
+
+.card .btn-primary:hover {
+  background: #962d34;
+  border: none;
 }

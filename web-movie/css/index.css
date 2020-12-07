@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .container .bg-img {
     width: 0px !important;
   }
@@ -89,7 +89,7 @@ form .form-group input {
   border: none;
 }
 
-form .form-group input:focus{
+form .form-group input:focus {
   background: rgb(18, 18, 20);
   border: none;
 }
