@@ -31,7 +31,9 @@ h1, h2, h3, h4, h5, h6, span {
 
 @media (max-width: 1080px) {
   .flex-container {
-    flex-direction: column !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    /* flex-direction: column !important; */
     align-items: center;
   }
 
