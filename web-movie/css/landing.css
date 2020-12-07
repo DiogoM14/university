@@ -15,22 +15,55 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
 }
 
-@media screen and (max-width: 765px) {
+@media (max-width: 1000px) {
+  .title h1 {
+    font-size: 28px !important;
+  }
 
-} 
+  .title span {
+    font-size: 18px !important;
+  }
+
+  .title h2 {
+    font-size: 28px !important;
+  }
+}
 
 .row {
   height: 100vh;
+  padding: 0;
 }
 
-.col-md-10 {
-  background-color: #fff;
+.col-md-12 {
   padding: 0;
-
   text-align: center;
 }
 
-.col-md-2 {
-  background-color: aqua;
-  padding: 0;
+.title {
+  text-align: left;
+  margin: 6% 10%;
+}
+
+.title h1 {
+  font-weight: bold;
+  font-size: 48px;
+
+  color: #e5434e;
+}
+
+.title span {
+  font-weight: 400;
+  font-size: 38px;
+  color: rgb(225, 225, 230);
+}
+
+.title h2 {
+  font-weight: 400;
+  font-size: 48px;
+  color: rgb(225, 225, 230);
+}
+
+hr {
+  color: #e5434e;
+
 }
