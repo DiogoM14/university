@@ -33,14 +33,27 @@ h1, h2, h3, h4, h5, h6, span {
   .flex-container {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    /* flex-direction: column !important; */
-    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 15px;
+    justify-self: center !important;
+  }
+}
+
+@media (max-width: 730px) {
+  .flex-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
   }
 
   .card {
     margin-bottom: 15px;
   }
 }
+
 
 .row {
   height: 100vh;
