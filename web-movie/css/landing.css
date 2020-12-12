@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5, h6, span {
   }
 }
 
-
 .row {
   height: 100vh;
   padding: 0;
@@ -134,7 +133,7 @@ h1, h2, h3, h4, h5, h6, span {
 
 .title {
   text-align: left;
-  margin: 6% 10%;
+  margin: 3% 10%;
 }
 
 .title h1 {
