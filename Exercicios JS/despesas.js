@@ -25,4 +25,3 @@ const getBalance = () => {
 }
 
 getBalance()
-
