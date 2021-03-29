@@ -1,4 +1,4 @@
-package exercicios;
+package ex03;
 
 import static org.junit.Assert.assertTrue;
 
