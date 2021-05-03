@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col><b>Classificação</b></ion-col>
+      <ion-col><b>BMI</b></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Magreza</ion-col>
+      <ion-col> < 18.5 </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Peso Normal</ion-col>
+      <ion-col> 18.5 a 24.9 </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Sobrepeso</ion-col>
+      <ion-col> 25 a 29.9 </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Obesidade 1</ion-col>
+      <ion-col> 30 a 34.9 </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Obesidade 2</ion-col>
+      <ion-col> 35 a 39.9 </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Obesidade 3</ion-col>
+      <ion-col> > 40 </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button expand="full" color="primary" [routerLink]="['/bmi']">
+    <ion-icon slot="icon-only" name="home"></ion-icon>
+  </ion-button>
+</ion-content>
