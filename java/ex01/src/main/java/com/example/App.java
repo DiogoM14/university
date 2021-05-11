@@ -6,6 +6,7 @@ public class App {
         // DemoArray.limpar();
         // DemoArray.procurar();
         // DemoArray.ordenar();
-        DemoArray.eliminaPos();
+        // DemoArray.aumentaArray(5);
+        DemoArray.ordenar();
     }
 }

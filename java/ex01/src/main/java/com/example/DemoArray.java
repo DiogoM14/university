@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class DemoArray {
   static Scanner scanner = new Scanner(System.in);
-  public static int[] array = new int[5]; 
+  public static int tamanho = aumentaArray(5);
+  public static int[] array = new int[tamanho]; 
 
   public static void criarArray() {
     array[0] = 153;
@@ -91,8 +92,7 @@ public class DemoArray {
   }
 
   public static void eliminaPos() {
-
-    System.out.print("Número a procurar -> ");
+    System.out.print("Número a eliminar -> ");
     int number = scanner.nextInt();
 
     for (int i = 0; i < array.length; i++) {
@@ -106,5 +106,25 @@ public class DemoArray {
     for (int j = 0; j < array.length; j++) {
       System.out.print(array[j] + " ");
     }
+  }
+
+  public static void verificaRepetidos() {
+    boolean encontrou = false;
+
+    for (int i = 0; i < array.length; i++) {
+      for (int j = i+1; j < array.length; j++) {
+        if (array[i] == array[j]) {
+          encontrou = true;
+          System.out.println("Repetidos");
+        }
+      }
+    }
+    if (!encontrou) {
+      System.out.println("Não há repetidos");
+    }
+  }
+
+  public static int aumentaArray(int tamanho) {
+    return tamanho*2;
   }
 }
