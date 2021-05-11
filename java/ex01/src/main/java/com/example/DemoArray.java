@@ -89,4 +89,22 @@ public class DemoArray {
       System.out.println("Numero nao encontrado");  
    }  
   }
+
+  public static void eliminaPos() {
+
+    System.out.print("Número a procurar -> ");
+    int number = scanner.nextInt();
+
+    for (int i = 0; i < array.length; i++) {
+      
+      if (number == array[i]) {
+        array[i] = 0;
+        System.out.println("Numero removido com sucesso!");
+      }
+    }
+    
+    for (int j = 0; j < array.length; j++) {
+      System.out.print(array[j] + " ");
+    }
+  }
 }

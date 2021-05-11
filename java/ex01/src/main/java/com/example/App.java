@@ -6,6 +6,6 @@ public class App {
         // DemoArray.limpar();
         // DemoArray.procurar();
         // DemoArray.ordenar();
-        DemoArray.pesquisaBinaria();
+        DemoArray.eliminaPos();
     }
 }
