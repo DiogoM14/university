@@ -3,10 +3,6 @@ package com.mycompany.aed.aula2;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/**
- *
- * @author User
- */
 public class DemoArraylist<T extends Comparable> {
     
     private ArrayList<T> lista;
@@ -20,18 +16,18 @@ public class DemoArraylist<T extends Comparable> {
     
     public void limpa()
     {
-      this.lista.clear();
-      
+        this.lista.clear();
+        
         
     }
     
     public int procura(T elem)
     {
-      
+        
         return this.lista.indexOf(elem);
         
-       
-       
+        
+        
     }
     
     
@@ -41,28 +37,28 @@ public class DemoArraylist<T extends Comparable> {
         
     }
     
-   
-public void add(T elem)
-{
-    this.lista.add(elem);
     
-}
-
-   
-public void  ordena()
-{
-   
-    Collections.sort(lista);
-    
+    public void add(T elem)
+    {
+        this.lista.add(elem);
         
-}
+    }
     
-
-public void remove(T elem)
-{
-    this.lista.remove(elem);
-}
-
+    
+    public void  ordena()
+    {
+        
+        Collections.sort(lista);
+        
+        
+    }
+    
+    
+    public void remove(T elem)
+    {
+        this.lista.remove(elem);
+    }
+    
     @Override
     public String toString() {
         String result="DemoArrayList->";
@@ -73,9 +69,9 @@ public void remove(T elem)
         return result;
     }
     
-
-
-
-
-
+    
+    
+    
+    
+    
 }
