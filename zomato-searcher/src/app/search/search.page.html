@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Zomato Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label>Cidade</ion-label>
+      <ion-select
+        [(ngModel)]="selectedCity"
+        placeholder="Select City"
+      >
+        <ion-select-option value="311">Porto</ion-select-option>
+        <ion-select-option value="82">Lisboa</ion-select-option>
+        <ion-select-option value="11610">Algarve</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Categoria</ion-label>
+      <ion-select
+        [(ngModel)]="selectedCategoria"
+        placeholder="Select Categoria"
+        (ionChange)="onChangeCity()"
+      >
+      <ion-select-option
+        *ngFor="let categoria of categoriasList" [value]="categoria.categories.id"
+      >
+        {{ categoria.categories.name }}
+      </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Coleção</ion-label>
+      <ion-select [(ngModel)]="selectedColecao" placeholder="Select Coleção">
+        <ion-select-option *ngFor="let colecao of colecoesList" [value]="colecao.collection.collection_id">{{ colecao.collection.title }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block"
+    [routerLink]="['/list']"
+    [queryParams]="{
+      entity_id: selectedCity,
+      collection_id: selectedCategoria,
+      category: selectedColecao
+    }"
+  >
+    Procurar Restaurantes
+  </ion-button>
+</ion-content>
